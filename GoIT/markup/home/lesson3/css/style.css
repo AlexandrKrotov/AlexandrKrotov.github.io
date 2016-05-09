@@ -56,7 +56,7 @@ body {
   display: inline-block;
   width: 238px;
   height: 246px;
-  top: -331px;
+  float: left;
 }
 
 .left-menu li a {
