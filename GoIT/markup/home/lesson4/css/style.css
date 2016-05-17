@@ -1,0 +1,39 @@
+body {
+  background: url('../img/bg.jpg') no-repeat;
+}
+.clearfix {
+  clear: both;
+  height: 1px;
+  background-color: #128aa7;
+}
+
+.wrap {
+  width: 1000px;
+  height: 988px;
+  margin: 38px auto;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.35);
+  background-color: #fff;
+}
+header {
+  height: 175px;
+  padding: 0 28px;
+}
+
+.logo {
+  float: left;
+  margin-top: 8px;
+  margin-right: 300px;
+}
+
+.contact {
+  float: right;
+  margin-bottom: 50px;
+}
+
+.icon-bar {
+  float: right;
+}
+
+.icon-bar li {
+  display: inline-block;
+}
