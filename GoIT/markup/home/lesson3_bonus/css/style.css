@@ -5,6 +5,7 @@ body {
   color: #fff;
   font: 15px sans-serif;
 }
+
 .wrap {
   width: 832px;
   height: 100%;
@@ -13,8 +14,13 @@ body {
 
 header {
   display: block;
-  width: 100%;
+  width: 832px;
   height: 151px;
+}
+
+header::after {
+  content: "";
+  clear: both;
 }
 
 .logo {
@@ -32,7 +38,7 @@ header {
 
 .content {
   display: block;
-  width: 100%;
+  width: 832px;
   height: 452px;
   margin: 0 auto;
   margin-bottom: 80px;
@@ -44,6 +50,11 @@ header {
   width: 260px;
   height: 178px;
   border: 3px solid #888;
+}
+
+.content div::after {
+  content: "";
+  clear: both;
 }
 
 .content .margin-right {
@@ -63,7 +74,7 @@ footer {
   display: block;
   position: relative;
   bottom: 15px;
-  width: 100%;
+  width: 832px;
   height: 20px;
   line-height: 20px;
   text-align: center;
