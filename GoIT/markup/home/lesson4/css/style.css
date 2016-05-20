@@ -1,0 +1,180 @@
+body {
+  background: url("../img/bg.jpg") repeat-x;
+  font: 15px Tahoma, Verdana, sans-serif;;
+}
+
+.clearfix {
+  clear: both;
+  height: 1px;
+  background-color: #128aa7;
+}
+
+.wrap {
+  width: 1000px;
+  height: 988px;
+  margin: 38px auto;
+  margin-bottom: 0;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5), -3px -3px 5px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+}
+
+/*HEADER
+==========*/
+
+header {
+  height: 175px;
+  padding: 0 28px;
+  color: #128aa7;
+}
+
+.logo {
+  float: left;
+  margin-top: 8px;
+  margin-right: 100px;
+}
+
+.contact {
+  float: right;
+  margin-bottom: 40px;
+}
+
+.icon-bar {
+  width: 450px;
+  float: right;
+  text-align: center;
+  font-size: 12px;
+}
+
+.icon-bar li {
+  width: 65px;
+  height: 42px;
+  margin: 0 3px;
+  display: inline-block;
+}
+
+.icon-bar li p {
+  color: #128aa7;
+  text-decoration: underline;
+}
+
+/*PHOTO
+==========*/
+
+.photo {
+  width: 1000px;
+  overflow: hidden;
+  height: 237px;
+  border: 2px solid #128aa7;
+}
+
+/*MENU
+==========*/
+
+ul.menu {
+  display: block;
+  width: 1000px;
+  font-size: 13px;
+  background: linear-gradient(black, grey);
+}
+
+ul::after {
+  display: block;
+  content: " ";
+  clear: both;
+  float: none;
+}
+
+ul.menu > li {
+  float: left;
+  position: relative;
+  margin-right: 50px;
+}
+ul.menu > li:last-child {
+  margin-right: 0;
+}
+
+ul.menu > li > a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  background: -webkit-linear-gradient(black, grey);
+  text-decoration: none;
+}
+
+ul.menu > li > a:hover {
+  background-color: black;
+}
+
+ul.submenu {
+  display: none;
+  position: absolute;
+  width: 125px;
+  background: -webkit-linear-gradient(grey, black);
+  color: #fff;
+  text-align: center;
+}
+.submenu_trips {
+  left: -8px
+}
+
+.submenu_services {
+  left: -29px
+}
+
+.submenu_partners {
+  left: -14px
+}
+
+ul.submenu li {
+  height: 38px;
+}
+
+ul.submenu a {
+  color: #fff;
+}
+
+ul.menu > li:hover > ul.submenu {
+  display: block;
+}
+ul.menu > li.triangle > a::after {
+  content: "";
+  position: absolute;
+  border-color: #fff transparent transparent transparent;
+  border-style: solid;
+  border-width: 6px 3px 0 3px;
+}
+
+.triangle_trips  > a::after {
+  top: 15px;
+  left: 102px;
+}
+
+.triangle_services  > a::after {
+  top: 15px;
+  left: 52px;
+}
+
+.triangle_partners  > a::after {
+  top: 15px;
+  left: 88px;
+}
+
+.content-aside{
+  display: block;
+  width: 200px;
+  height: 536px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, .1)
+}
+.content-aside_left {
+  float: left;
+}
+
+.content-aside_right {
+  float: right;
+}
+
+footer {
+  text-align: center;
+  color: #fff;
+}
