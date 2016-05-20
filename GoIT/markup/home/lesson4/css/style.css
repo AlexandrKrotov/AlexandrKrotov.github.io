@@ -1,5 +1,12 @@
 body {
   background: url('../img/bg.jpg') no-repeat;
+  /*background: rgb(71, 113, 175);
+  background: -moz-linear-gradient(270deg, rgb(71, 113, 175) 30%, rgb(90, 140, 250) 77%);
+  background: -webkit-linear-gradient(270deg, rgb(71, 113, 175) 30%, rgb(90, 140, 250) 77%);
+  background: -o-linear-gradient(270deg, rgb(71, 113, 175) 30%, rgb(90, 140, 250) 77%);
+  background: -ms-linear-gradient(270deg, rgb(71, 113, 175) 30%, rgb(90, 140, 250) 77%);
+  background: linear-gradient(0deg, rgb(71, 113, 175) 30%, rgb(90, 140, 250) 77%);*/
+  font-size: 13px;
 }
 .clearfix {
   clear: both;
@@ -22,7 +29,7 @@ header {
 .logo {
   float: left;
   margin-top: 8px;
-  margin-right: 300px;
+  margin-right: 100px;
 }
 
 .contact {
@@ -32,8 +39,64 @@ header {
 
 .icon-bar {
   float: right;
+  text-align: center;
 }
 
 .icon-bar li {
+  width: 80px;
+  height: 42px;
+  margin: 0 3px;
   display: inline-block;
+}
+
+.photo {
+  border: 1px solid #128aa7;
+}
+
+.menu {
+  display:block;
+  height: 30px;
+  background: -webkit-linear-gradient( black, grey);
+}
+
+.menu ul {
+  height: 30px;
+}
+
+.menu li {
+  overflow: hidden;
+  display: inline-block;
+  width: 84px;
+  height: 30px;
+  margin: 1px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.menu li a {
+  color: #fff;
+}
+
+.menu li:hover {
+  height: 150px;
+  width: 84px;
+}
+
+.submenu li {
+  display: block;
+  background: -webkit-linear-gradient( black, grey);
+}
+
+.left-block {
+  display: block;
+  width: 200px;
+  height: 400px;
+  float: left;
+}
+
+.right-block {
+  display: block;
+  width: 200px;
+  height: 400px;
+  float: right;
 }
