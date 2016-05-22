@@ -1,12 +1,11 @@
 body {
-  background: url("../img/bg.jpg") repeat-x;
-  font: 15px Tahoma, Verdana, sans-serif;;
+  background: url('../img/bg.jpg') repeat-x;
+  font: 15px Tahoma, Verdana, sans-serif;
 }
 
 .clearfix {
-  clear: both;
   height: 1px;
-  background-color: #128aa7;
+  clear: both;
 }
 
 .wrap {
@@ -14,8 +13,8 @@ body {
   height: 988px;
   margin: 38px auto;
   margin-bottom: 0;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5), -3px -3px 5px rgba(0, 0, 0, 0.5);
   background-color: #fff;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, .5), -3px -3px 5px rgba(0, 0, 0, .5);
 }
 
 /*HEADER
@@ -25,36 +24,42 @@ header {
   height: 175px;
   padding: 0 28px;
   color: #128aa7;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .logo {
-  float: left;
   margin-top: 8px;
-  margin-right: 100px;
+  margin-right: 270px;
+  float: left;
 }
 
 .contact {
+  margin-bottom: 55px;
   float: right;
-  margin-bottom: 40px;
 }
 
 .icon-bar {
-  width: 450px;
+  width: 390px;
   float: right;
   text-align: center;
-  font-size: 12px;
 }
 
 .icon-bar li {
-  width: 65px;
-  height: 42px;
-  margin: 0 3px;
   display: inline-block;
+  width: 60px;
+  height: 42px;
 }
 
 .icon-bar li p {
   color: #128aa7;
+  font-size: 10px;
   text-decoration: underline;
+}
+
+.icon-bar a:hover > p {
+  font-weight: bold;
+  text-decoration: none;
 }
 
 /*PHOTO
@@ -62,119 +67,130 @@ header {
 
 .photo {
   width: 1000px;
-  overflow: hidden;
   height: 237px;
   border: 2px solid #128aa7;
+  overflow: hidden;
 }
 
 /*MENU
 ==========*/
 
-ul.menu {
+.menu {
   display: block;
   width: 1000px;
+  background-color: #303030;
   font-size: 13px;
-  background: linear-gradient(black, grey);
 }
 
 ul::after {
   display: block;
-  content: " ";
-  clear: both;
   float: none;
+  clear: both;
+  content: ' ';
 }
 
-ul.menu > li {
-  float: left;
+.menu > li {
   position: relative;
   margin-right: 50px;
+  float: left;
 }
-ul.menu > li:last-child {
+
+.menu > li:last-child {
   margin-right: 0;
 }
 
-ul.menu > li > a {
+.menu > li > a {
   display: block;
   padding: 10px;
+  background-color: #303030;
   color: #fff;
-  background: -webkit-linear-gradient(black, grey);
   text-decoration: none;
 }
 
-ul.menu > li > a:hover {
-  background-color: black;
+.menu > li  a:hover {
+  color: #108eae;
 }
 
-ul.submenu {
+.submenu {
   display: none;
   position: absolute;
   width: 125px;
-  background: -webkit-linear-gradient(grey, black);
+  background-color: #303030;
   color: #fff;
   text-align: center;
-}
-.submenu_trips {
-  left: -8px
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .75);
 }
 
-.submenu_services {
-  left: -29px
+.submenu-trips {
+  left: -8px;
 }
 
-.submenu_partners {
-  left: -14px
+.submenu-services {
+  left: -29px;
 }
 
-ul.submenu li {
+.submenu-partners {
+  left: -14px;
+}
+
+.submenu li {
   height: 38px;
 }
 
-ul.submenu a {
+.submenu a {
   color: #fff;
 }
 
-ul.menu > li:hover > ul.submenu {
+.menu > li:hover > .submenu {
   display: block;
 }
-ul.menu > li.triangle > a::after {
-  content: "";
+
+.menu > .triangle > a::after {
   position: absolute;
-  border-color: #fff transparent transparent transparent;
+  border-width: 6px 3px 0;
   border-style: solid;
-  border-width: 6px 3px 0 3px;
+  border-color: #fff transparent transparent;
+  content: '';
 }
 
-.triangle_trips  > a::after {
+.triangle-trips  > a::after {
   top: 15px;
-  left: 102px;
+  left: 98px;
 }
 
-.triangle_services  > a::after {
+.triangle-services  > a::after {
   top: 15px;
-  left: 52px;
+  left: 57px;
 }
 
-.triangle_partners  > a::after {
+.triangle-partners  > a::after {
   top: 15px;
-  left: 88px;
+  left: 86px;
 }
 
-.content-aside{
+/*CONTENT
+==========*/
+
+.content-aside {
   display: block;
   width: 200px;
   height: 536px;
+  background-color: rgba(0, 0, 0, .1);
   text-align: center;
-  background-color: rgba(0, 0, 0, .1)
 }
-.content-aside_left {
+
+.content-aside-left {
   float: left;
 }
 
-.content-aside_right {
+.content-aside-right {
   float: right;
 }
 
+/*FOOTER
+==========*/
+
 footer {
-  text-align: center;
   color: #fff;
+  text-align: center;
 }
