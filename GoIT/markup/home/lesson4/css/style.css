@@ -1,20 +1,23 @@
 body {
   background: url('../img/bg.jpg') repeat-x;
+  background-color: #0c739f;
+  background-size: 1055px;
   font: 15px Tahoma, Verdana, sans-serif;
 }
 
-.clearfix {
-  height: 1px;
+.clearfix:after {
+  content: '';
+  display: block;
   clear: both;
 }
 
 .wrap {
   width: 1000px;
   height: 988px;
-  margin: 38px auto;
+  margin: 0 auto;
   margin-bottom: 0;
   background-color: #fff;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, .5), -3px -3px 5px rgba(0, 0, 0, .5);
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, .4);
 }
 
 /*HEADER
@@ -43,6 +46,7 @@ header {
   width: 390px;
   float: right;
   text-align: center;
+  overflow: hidden;
 }
 
 .icon-bar li {
@@ -72,34 +76,24 @@ header {
   overflow: hidden;
 }
 
+.photo img {
+  max-width: 100%;
+}
+
 /*MENU
 ==========*/
 
 .menu {
-  display: block;
+  display: flex;;
+  position: relative;
+  flex-direction: row wrap;
+  justify-content: space-around;
   width: 1000px;
   background-color: #303030;
   font-size: 13px;
 }
 
-ul::after {
-  display: block;
-  float: none;
-  clear: both;
-  content: ' ';
-}
-
-.menu > li {
-  position: relative;
-  margin-right: 50px;
-  float: left;
-}
-
-.menu > li:last-child {
-  margin-right: 0;
-}
-
-.menu > li > a {
+.menu-link {
   display: block;
   padding: 10px;
   background-color: #303030;
@@ -107,7 +101,7 @@ ul::after {
   text-decoration: none;
 }
 
-.menu > li  a:hover {
+.menu-link:hover {
   color: #108eae;
 }
 
@@ -122,54 +116,51 @@ ul::after {
 }
 
 .submenu-trips {
-  left: -8px;
+  left: 154px;
 }
 
 .submenu-services {
-  left: -29px;
+  left: 295px;
 }
 
 .submenu-partners {
-  left: -14px;
-}
-
-.submenu li {
-  height: 38px;
+  left: 429px;
 }
 
 .submenu a {
   color: #fff;
 }
 
-.menu > li:hover > .submenu {
+.menu > .block:hover .submenu {
   display: block;
 }
 
-.menu > .triangle > a::after {
+.triangle > a:after {
   position: absolute;
   border-width: 6px 3px 0;
   border-style: solid;
+  top: 17px;
   border-color: #fff transparent transparent;
   content: '';
 }
 
-.triangle-trips  > a::after {
-  top: 15px;
-  left: 98px;
+.triangle-trips  > a:after {
+  left: 253px;
 }
 
-.triangle-services  > a::after {
-  top: 15px;
-  left: 57px;
+.triangle-services  > a:after {
+  left: 375px;
 }
 
-.triangle-partners  > a::after {
-  top: 15px;
-  left: 86px;
+.triangle-partners  > a:after {
+  left: 522px;
 }
 
 /*CONTENT
 ==========*/
+.content {
+  height: 536px;
+}
 
 .content-aside {
   display: block;
@@ -177,6 +168,7 @@ ul::after {
   height: 536px;
   background-color: rgba(0, 0, 0, .1);
   text-align: center;
+  overflow: hidden;
 }
 
 .content-aside-left {
