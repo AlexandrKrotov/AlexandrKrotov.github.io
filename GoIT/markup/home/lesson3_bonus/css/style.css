@@ -19,17 +19,17 @@ header {
 }
 
 header::after {
-  content: "";
   clear: both;
+  content: '';
 }
 
 .logo {
-  display: inline-block;
+  display: block;
   float: left;
 }
 
 .contact {
-  display: inline-block;
+  display: block;
   margin-top: 90px;
   float: right;
   color: #fff;
@@ -67,7 +67,7 @@ header::after {
 
 .content div:hover {
   border: 3px solid #ff0;
-  box-shadow: 0 0 25px 3px rgba(255, 255, 0, .5);
+  box-shadow: 0 0 25px 3px rgba(255, 255, 0 , .5);
 }
 
 footer {
