@@ -1,14 +1,14 @@
 body {
   background: url('../img/bg.jpg') repeat-x;
   background-color: #0c739f;
-  background-size: 1055px;
+  background-size: 1051px;
   font: 15px Tahoma, Verdana, sans-serif;
 }
 
 .clearfix:after {
-  content: '';
   display: block;
   clear: both;
+  content: '';
 }
 
 .wrap {
@@ -24,7 +24,7 @@ body {
 ==========*/
 
 header {
-  height: 175px;
+  height: 177px;
   padding: 0 28px;
   color: #128aa7;
   font-size: 12px;
@@ -32,18 +32,24 @@ header {
 }
 
 .logo {
-  margin-top: 8px;
+  margin-top: 11px;
   margin-right: 270px;
   float: left;
 }
 
 .contact {
-  margin-bottom: 55px;
+  margin-top: 5px;
+  margin-bottom: 45px;
   float: right;
 }
 
+.contact p {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
 .icon-bar {
-  width: 390px;
+  width: 345px;
   float: right;
   text-align: center;
   overflow: hidden;
@@ -51,7 +57,7 @@ header {
 
 .icon-bar li {
   display: inline-block;
-  width: 60px;
+  width: 54px;
   height: 42px;
 }
 
@@ -62,6 +68,7 @@ header {
 }
 
 .icon-bar a:hover > p {
+  font-size: 9px;
   font-weight: bold;
   text-decoration: none;
 }
@@ -70,9 +77,9 @@ header {
 ==========*/
 
 .photo {
-  width: 1000px;
+  width: auto;
   height: 237px;
-  border: 2px solid #128aa7;
+  /*border: 1px solid #128aa7;*/
   overflow: hidden;
 }
 
@@ -84,18 +91,23 @@ header {
 ==========*/
 
 .menu {
-  display: flex;;
+  display: flex;
   position: relative;
-  flex-direction: row wrap;
+  flex-flow: row wrap;
   justify-content: space-around;
-  width: 1000px;
+  width: 944px;
+  height: 34px;
+  padding: 0 28px;
   background-color: #303030;
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 34px;
 }
 
 .menu-link {
   display: block;
-  padding: 10px;
+  width: auto;
+  height: 34px;
   background-color: #303030;
   color: #fff;
   text-decoration: none;
@@ -108,7 +120,8 @@ header {
 .submenu {
   display: none;
   position: absolute;
-  width: 125px;
+  width: auto;
+  height: 125px;
   background-color: #303030;
   color: #fff;
   text-align: center;
@@ -116,15 +129,15 @@ header {
 }
 
 .submenu-trips {
-  left: 154px;
+  left: 181px;
 }
 
 .submenu-services {
-  left: 295px;
+  left: 335px;
 }
 
 .submenu-partners {
-  left: 429px;
+  left: 448px;
 }
 
 .submenu a {
@@ -137,19 +150,19 @@ header {
 
 .triangle > a:after {
   position: absolute;
+  top: 15px;
   border-width: 6px 3px 0;
   border-style: solid;
-  top: 17px;
   border-color: #fff transparent transparent;
   content: '';
 }
 
 .triangle-trips  > a:after {
-  left: 253px;
+  left: 270px;
 }
 
 .triangle-services  > a:after {
-  left: 375px;
+  left: 382px;
 }
 
 .triangle-partners  > a:after {
@@ -165,8 +178,12 @@ header {
 .content-aside {
   display: block;
   width: 200px;
-  height: 536px;
+  height: 100%;
+  -webkit-background-color: rgba(0, 0, 0, .1);
   background-color: rgba(0, 0, 0, .1);
+  color: #424c43;
+  font-size: 14px;
+  line-height: 24px;
   text-align: center;
   overflow: hidden;
 }
@@ -184,5 +201,7 @@ header {
 
 footer {
   color: #fff;
+  font-size: 12px;
   text-align: center;
+  opacity: .8;
 }
