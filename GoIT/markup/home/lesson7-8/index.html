@@ -10,12 +10,157 @@
   <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <div class="wrapper__header">
-      <header class="clearfix">
-        <div class="logo">
-          <img src="img/logo.png" alt="logo">
+  <svg style="display:none;">
+    <!-- icons here -->
+    <symbol id="sprite" viewBox="0 0 25 25">
+      <path d="M32 6.076c-1.177 …" fill="#000000"></path>
+    </symbol>
+  </svg>
+  <div class="wrapper__header">
+    <header class="clearfix">
+      <div class="logo">
+        <span class="logo__span">PINGBULL</span>
+        <span class="logo__span logo__span_end">ER</span>
+      </div>
+      <ul class="menu">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABAUT</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">PRODUCTS</a></li>
+        <li><a href="#">LOREM IPSUM</a></li>
+        <li><a href="#">DOLOR SIT AMET</a></li>
+      </ul>
+    </header>
+    <div class="slider">
+      <div class="slides slider_content1">
+        <div class="slider__info clearfix">
+          <h1>Lorem Ipsum Dolor</h1>
+          <h3>IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h3>
+          <span>
+            Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.
+          </div>
+          <div class="slider__img clearfix">
+            <img src="img/iphone.png" alt="iphone">
+          </div>
         </div>
-          <ul class="menu">
+        <!-- <div class="slides slide2"></div>
+        <div class="slides slide3"></div>
+        <div class="slides slide4"></div>-->
+        <div class="slider__radio">
+          <input type="radio" name="point" id="slide1">
+          <input type="radio" name="point" id="slide2" checked>
+          <input type="radio" name="point" id="slide3">
+          <input type="radio" name="point" id="slide4">
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <div class="info__wrapper">
+        <div class="info__element clearfix info_element_setings">
+          <div class="info__logo info__logo_setings"></div>
+          <h2>About our company</h2>
+          <span>
+            Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam
+          </span>
+          <a href="#">READ MORE</a>
+        </div>
+        <div class="info__element clearfix info__element_talk">
+          <div class="info__logo info__logo_talk"></div>
+          <h2>About our company</h2>
+          <span>
+            Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam
+          </span>
+          <a href="#">READ MORE</a>
+        </div>
+        <div class="info__element clearfix info__element_sound">
+          <div class="info__logo info__logo_sound"></div>
+          <h2>About our company</h2>
+          <span>
+            Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam
+          </span>
+          <a href="#">READ MORE</a>
+        </div>
+      </div>
+    </div>
+    <content>
+      <div class="content__wrapper">
+        <div class="slider_content clearfix">
+          <div class="slides_content slide1">
+            <div class="slider__header_content">
+              <img src="img/avatar.png" alt="avatar">
+              <h3>PINGBULLER</h3>
+              <span>STARTS HERE</span>
+            </div>
+            <div class="slider__info_content clearfix">
+              <span>
+                “Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”
+              </span>
+            </div>
+            <div class="slider__img_content clearfix">
+            </div>
+          </div>
+          <!-- <div class="slides slide2"></div>
+          <div class="slides slide3"></div>
+          <div class="slides slide4"></div>-->
+        </div>
+        <div class="slider__radio_content">
+          <input type="radio" name="point_content" id="slide_content1">
+          <input type="radio" name="point_content" id="slide_content2" checked>
+          <input type="radio" name="point_content" id="slide_content3">
+          <input type="radio" name="point_content" id="slide_content4">
+        </div>
+        <div class="update">
+          <h3>RECENT UPDATES</h3>
+          <div class="update__element clearfix">
+            <img src="img/update-1.png" alt="avatar 1">
+            <h4>Nunc turpis neque feugiat eget </h4>
+            <span>Posted by Admin on March 13 2012 in Recent News</span>
+          </div>
+          <div class="update__element clearfix">
+            <img src="img/update-2.png" alt="avatar 2">
+            <h4>Nunc turpis neque feugiat eget</h4>
+            <span>Posted by Admin on March 13 2012 in Category</span>
+          </div>
+          <div class="update__element clearfix">
+            <img src="img/update-3.png" alt="avatar 3">
+            <h4>Nunc turpis neque feugiat eget</h4>
+            <span>Posted by Admin on March 13 2012 in Blog Updates</span>
+            <a href="#" class="update__link clearfix">READ MORE HERE</a>
+          </div>
+          <!-- <div class="line"></div> -->
+        </div>
+      </div>
+      <hr class="line">
+      <div class="brands">
+        <img src="img/logos.png" alt="brands">
+      </div>
+    </content>
+    <div class="news">
+      <div class="news__wrapper">
+        <div class="news__item news__item_first">
+          <div class="logo logo_news">
+            <span class="logo__span logo__span_news">PINGBULL</span>
+            <span class="logo__span logo__span_end logo__span_end_news">ER</span>
+          </div>
+          <span class="news__copy">
+            Copyright 2013, Pingbull AS
+          </span>
+          <span class="news__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque</span>
+        </div>
+        <div class="news__item news__item_mid" >
+          <h3>RECENT COMMENTS</h3>
+          <span class="news__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</span>
+        </div>
+        <div class="news__item news__item_last">
+          <h3>NEWS CATEGORIES</h3>
+          <span class="news__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</span>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer__wrapper clearfix">
+        <div class="menu menu_footer clearfix">
+          <ul>
             <li><a href="#">HOME</a></li>
             <li><a href="#">ABAUT</a></li>
             <li><a href="#">BLOG</a></li>
@@ -23,131 +168,12 @@
             <li><a href="#">LOREM IPSUM</a></li>
             <li><a href="#">DOLOR SIT AMET</a></li>
           </ul>
-      </header>
-      <slider>
-        <div class="wrapper">
-          <div class="slider">
-            <div class="slides slide1">
-              <div class="slider__info">
-                <h1>Lorem Ipsum Dolor</h1>
-                <h3>IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h3>
-                <span>
-                  Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id
-                </span>
-                <div class="slider_img">
-                  <img src="img/iphone.png" alt="iphone">
-                </div>
-              </div>
-            </div>
-            <div class="slides slide2"></div>
-            <div class="slides slide3"></div>
-            <div class="slides slide4"></div>
-            <div class="slides slide5"></div>
-            <input type="radio" name="point" id="slide1" checked>
-            <input type="radio" name="point" id="slide2">
-            <input type="radio" name="point" id="slide3">
-            <input type="radio" name="point" id="slide4">
-            <input type="radio" name="point" id="slide5">
-          </div>
-          <div class="controls">
-            <label for="slide1"></label>
-            <label for="slide2"></label>
-            <label for="slide3"></label>
-            <label for="slide4"></label>
-            <label for="slide5"></label>
-          </div>
         </div>
-      </slider>
-    </div>
-    <div class="info">
-      <div class="info_element">
-        <div class="info_element__setings">
-          <img src="" alt="">
-          <h2>About our company</h2>
-          <span>
-            Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae
-          </span>
+        <div class="designed clearfix">
+          <span class="designed__part1">Designed by</span>
+          <span class="designed__part2">Pingbull AS</span>
         </div>
-      </div>
-      <div class="info_element"></div>
-        <div class="info_element__talk">
-          <img src="" alt="">
-          <h2>About our company</h2>
-          <span>
-            Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae
-          </span>
-        </div>
-      <div class="info_element">
-        <div class="info_element__sound">
-          <img src="" alt="">
-          <h2>About our company</h2>
-          <span>
-            Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae
-          </span>
-        </div>
-      </div>
-    </div>
-    <content>
-      <div class="slider">
-
-      </div>
-      <div class="update">
-        <h3>RECENT UPDATES</h3>
-        <div class="update_element">
-          <img src="" alt="">
-          <span>Nunc turpis neque feugiat eget </span>
-          <span>Posted by Admin on March 13 2012 in Recent News</span>
-        </div>
-        <div class="update_element">
-          <img src="" alt="">
-          <span>Nunc turpis neque feugiat eget</span>
-          <span>Posted by Admin on March 13 2012 in Recent News</span>
-        </div>
-        <div class="update_element">
-          <img src="" alt="">
-          <span>Nunc turpis neque feugiat eget</span>
-          <span>Posted by Admin on March 13 2012 in Recent News</span>
-        </div>
-      </div>
-      <div class="brands">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-      </div>
-    </content>
-    <div class="news">
-      <div class="news_item">
-        <div class="news_logo">
-          <img src="" alt="logo">
-        </div>
-        <span>
-          Copyright 2013, Pingbull AS
-        </span>
-        <span>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</span>
-      </div>
-      <div class="news_item">
-        <h3></h3>
-        <span>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</span>
-      </div>
-      <div class="news_item">
-        <h3></h3>
-        <span>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</span>
-      </div>
-    </div>
-    <footer>
-      <div class="menu">
-        <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABAUT</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="#">PRODUCTS</a></li>
-          <li><a href="#">LOREM IPSUM</a></li>
-          <li><a href="#">DOLOR SIT AMET</a></li>
-        </ul>
       </div>
     </footer>
-</body>
+  </body>
 </html>
